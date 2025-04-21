@@ -11,21 +11,9 @@ int main()
     scanf("%d",&b);
     printf("Enter the third number: ");
     scanf("%d",&c);
-    if (a>b && a>c)
-    {
-        printf("The number '%d' is greater than '%d' and '%d'.",a,b,c);
-    }
-    else if(a==b==c)
-    {
-        printf("The three numbers '%d','%d' and '%d' are equal.",a,b,c);
-    }
-    else if (b>a && b>c)
-    {
-        printf("The number '%d' is greater than '%d' and '%d'.",b,a,c);
-    }
-    else
-    {
-        printf("The number '%d' is greater than '%d' and '%d'.",c,a,b);
-    }
+    int d,e;
+    d=a>b?a:b;
+    e=d>c?d:c;
+    printf("The Greatest number '%d'",e);    
     return 0;
 }
